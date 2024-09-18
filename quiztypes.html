@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.main{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:blueviolet;
+    
+  
+}
+.inner{
+    display:grid;
+     grid-template-columns: repeat(4, 2fr);;
+    grid-template-rows: auto;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.grids{
+    height:200px;
+    width:220px;
+    background-color:azure;
+    border:1px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+/* .grids:hover{
+    height:210px;
+    width:210px;
+} */
+.btn{
+    margin:10px;
+    background-color:blueviolet;
+    height:40px;
+    width:150px;
+    border-radius:4px;
+    outline:none;
+
+}
+.btn:hover{
+    background-color:white;
+    
+
+}
+</style>
+<body>
+    <div class="main">
+        <div class="inner">
+            <div class="grids">
+                <h2>Computer Networks</h2>
+                <button class="btn" id="first">Start quiz</button>
+            </div>
+            <div class="grids">
+                <h2>Javascript</h2>
+                <button class="btn" id="second">Start quiz</button>
+            </div>
+            <div class="grids">
+                <h2>React</h2>
+                <button class="btn" id="third">Start quiz</button>
+            </div>
+            <div class="grids">
+                <h2>SQL</h2>
+                <button class="btn" id="four">Start quiz</button>
+            </div>
+            <div class="grids">
+                <h2>AWS</h2>
+                <button class="btn" id="five">Start quiz</button>
+            </div>
+            <div class="grids">
+                <h2>Java</h2>
+                <button class="btn" id="six">Start quiz</button>
+            </div>
+            <div class="grids">
+                <h2>DSA</h2>
+                <button class="btn" id="seven">Start quiz</button>
+            </div>
+            <div class="grids">
+                <h2>C++</h2>
+                <button class="btn" id="eight">Start quiz</button>
+            </div>
+           
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById("first").addEventListener("click",function()
+{
+    window.location.href="quiz.html";
+})
+document.getElementById("second").addEventListener("click",function()
+{
+    window.location.href="quiz2.html";
+})
+document.getElementById("third").addEventListener("click",function()
+{
+    window.location.href="quiz3.html";
+})
+document.getElementById("four").addEventListener("click",function()
+{
+    window.location.href="quiz4.html";
+})
+document.getElementById("five").addEventListener("click",function()
+{
+    window.location.href="quiz5.html";
+})
+document.getElementById("six").addEventListener("click",function()
+{
+    window.location.href="quiz6.html";
+})
+document.getElementById("seven").addEventListener("click",function()
+{
+    window.location.href="quiz7.html";
+})
+document.getElementById("eight").addEventListener("click",function()
+{
+    window.location.href="quiz8.html";
+})
+</script>
+</html>
